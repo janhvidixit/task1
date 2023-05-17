@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        /* background-image: url("back.jpg"); */
+        background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ),url("back.jpg");
+        /* height: 500px;
+        width: 900px;*/
+        background-size: 2000px 500px;
+        /* background-size: cover; */
+        background-repeat: no-repeat;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .left{
+        position: absolute;
+        left: 54px;
+        top: 8px;
+        margin-top: 14px;
+        /* border: 2px solid red; */
+        display: inline-block;
+    }
+    .left img{
+        width: 21px;
+        mix-blend-mode: multiply;
+        margin: 4px 2px;
+    }
+    .mid{
+        display: block;
+        width: 20%;
+        margin-top: 26px;
+        margin-left: 84px;
+        /* border: 2px solid red; */
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+    }
+    .right{
+        position: absolute;
+        right: 54px;
+        top: 0px;
+        margin-top: 10px;
+        /* border: 2px solid red; */
+        display: inline-block;
+        padding: 3px 4px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 12px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 13px 10px;
+        
+    } 
+    .navbar li a:hover{
+        background-color: rgb(1, 1, 1,0.4);
+        border-radius: 4px;
+        
+    }
+    .navbar li a.a4{
+        background-color: rgb(250, 91, 12);
+        padding: 9px;
+        background-size: 10px 10px;
+        border-radius: 4px;
+        margin-right: 16px;
+    }
+    .navbar li a.a5{
+        border: 1px solid white;
+        padding: 9px;
+        background-color: rgb(2, 2, 2,0.25);
+        border-radius: 4px;
+        color: white;
+    }
+    .container{
+        display: block;
+        /* border: 2px solid green; */
+        margin: 276px auto;
+        width: 25%;
+        border-radius: 2px;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+    }
+    .topbox{
+        display: block;
+        /* border: 2px solid green; */
+        margin: 81px auto;
+        width: 25%;
+        text-align: center;
+        font-size: 30px;
+    }
+    .leftbox{
+        position: absolute;
+        margin: 0px 231px;
+        border: 1.5px solid rgb(209, 207, 207);
+        display: inline-block;
+        width: 220px;
+        height: 250px;
+        text-align: center;
+        padding: 24px 17px;
+    }
+    .leftbox img{
+        width:30px;
+        padding: 13px 2px;
+    }
+    .title1{
+        padding: 19px 2px;
+        font-weight: bold;
+    }
+    .midbox{
+        display: block;
+        border: 1.5px solid rgb(209, 207, 207);
+        margin: 101px 600px;
+        text-align: center;
+        width: 220px;
+        height: 250px;
+        padding: 24px 17px;
+    }
+    .title2{
+        padding: 19px 2px;
+        font-weight: bold;
+    }
+    .midbox img{
+        width: 50px;
+        padding: 13px 2px;
+    }
+    .rightbox{
+        position: absolute;
+        margin: -402px 976px;
+        border: 1.5px solid rgb(209, 207, 207);
+        display: inline-block;
+        width: 220px;
+        height: 250px;
+        padding: 24px 17px;
+        text-align: center;
+    }
+    .title3{
+        padding: 19px 2px;
+        font-weight: bold;
+    }
+    .rightbox img{
+        width: 60px;
+        padding: 13px 2px;
+    }
+    .content{
+        color: gray;
+        font-size: 12px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="stack logo.jpg" alt="">
+        </div>
+        <!-- mid box for title -->
+        <div class="mid">
+            Stack
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <ul class="navbar">
+                <li><a href="#" class="a1">Home</a></li>
+                <li><a href="#" class="a2">Pages</a></li>
+                <li><a href="#" class="a3">Contact</a></li>
+                <li><a href="#" class="a4">LOG IN</a></li>
+                <li><a href="#" class="a5">SIGN UP</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        We Create Interfaces
+    </div>
+    <div class="topbox">
+        Our Services
+    </div>
+    <div class="boxes">
+    <div class="leftbox">
+        <img src="tablet icon.jpg" alt="">
+        <div class="title1">
+            Responsive Design
+        </div>
+        <div id="text1" class="content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias id quod perspiciatis eos voluptates fugit nihil distinctio nisi nam ipsa?
+        </div>
+    </div>
+    <div class="midbox">
+        <img src="desktop icon.jpg" alt="">
+        <div class="title2">
+            Business Solutions
+        </div>
+        <div id="text2" class="content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nulla aperiam laboriosam est omnis debitis sint quasi dolores ullam accusamus.
+        </div>
+    </div>
+    <div class="rightbox">
+        <img src="lighthouse icon.jpg" alt="">
+        <div class="title3">
+            Brand Identity
+        </div>
+        <div id="text3" class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, corporis. Nobis temporibus ratione placeat eligendi nulla, accusantium vel fugit ex?
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
